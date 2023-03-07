@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="assets/js/plugins.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Cars slider project</title>
+</head>
+<body>
+  <button class="prev pr-nv" id="cd-prev" onclick="prev()"><i class="fa fa-angle-left"></i></button>
+  <button class="next pr-nv" id="cd-next" onclick="next()"><i class="fa fa-angle-right"></i></button>
+        <!-- left side -->
+        <div class="container">
+          <div class="left">
+            <div class="dot-line"></div>
+            <div class="wrapper">
+              <div class="main">
+                <div class="card-bg c1" onclick= "push_position(1)" ><img id="q0" src="assets/img/storm.png" alt=""></div>
+                <div class="card-bg c2" onclick= "push_position(2)" ><img id="q1" src="assets/img/racecar.png" alt=""></div>
+                <div class="card-bg c3" onclick= "push_position(3)" ><img id="q2" src="assets/img/hudson.png" alt=""></div>
+                <div class="card-bg c4" onclick= "push_position(4)" ><img id="q3" src="assets/img/mcqueen.png" alt=""></div>
+                <div class="center-point"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- right side -->
+        <div class="right">
+          <div class="slider">
+            <img src="assets/img/hudson.png"   id="res1" class="active">
+            <img src="assets/img/racecar.png"id="res2">
+            <img src="assets/img/mcqueen.png"id="res3">
+            <img src="assets/img/storm.png"id="res4">
+          </div>
+          <!-- paginition -->
+          <div class="dots">
+            <a onclick="dot(1)"> <img src="assets/img/hudson.png"></a>
+            <a onclick="dot(2)"> <img src="assets/img/racecar.png"></a>
+            <a onclick="dot(3)"> <img src="assets/img/mcqueen.png"></a>
+            <a onclick="dot(4)"> <img src="assets/img/storm.png"></a>
+          </div>
+        </div>
+
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
